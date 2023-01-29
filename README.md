@@ -20,7 +20,7 @@ TCN. It takes about 2-3 minutes to train this model. Input_shape is (TimeSteps,1
  model.add(Flatten())
  model.add(Dense(50, activation='relu'))
  model.add(Dense(1))
- model.compile(loss='mean_squared_error', optimizer='adam')
+ model.compile(loss='mean_squared_error', optimizer='adam')**
 
  **model.fit(X_train,Y_train,validation_data=(X_test,Y_test),verbose=2,epochs=1000)** 
   
